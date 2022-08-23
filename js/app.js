@@ -25,6 +25,7 @@ const handleSelect = (item) => {
             ${i + 1}. <span>${element}</span>
             `
             playerContainer.appendChild(li);
+            // playerContainer.innerHTML += `${i+1}.<li>${element}</li>`;
             
         }
     }
@@ -32,7 +33,7 @@ const handleSelect = (item) => {
         alert("maximum")
     }
 
-
+   
 
 }
 
