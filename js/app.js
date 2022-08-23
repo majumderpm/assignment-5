@@ -20,11 +20,12 @@ const handleSelect = (item) => {
         for (let i = 0; i < playerArray.length; i++) {
             const element = playerArray[i];
 
-            const childLi = document.createElement("li");
-            childLi.innerHTML = `
+            const li = document.createElement("li");
+            li.innerHTML = `
             ${i + 1}. <span>${element}</span>
             `
-            playerContainer.appendChild(childLi);
+            playerContainer.appendChild(li);
+            
         }
     }
     else {
