@@ -34,3 +34,39 @@ const handleSelect = (item) => {
 
 }
 
+
+
+
+
+////  player amount 
+
+
+const perPlayerAmount = document.getElementById("perPlayerAmount");
+const playerExpense = document.getElementById("playerExpense");
+const managerAmount = document.getElementById("managerAmount");
+const coachAmount = document.getElementById("coachAmount");
+const totalAMount = document.getElementById("totalAMount");
+
+const calculate = () => {
+
+    if (playerArray.length == 0) {
+        alert("Please select a player!")
+    } else {
+
+        playerExpense.innerText = playerArray.length * Number(perPlayerAmount.value)
+    }
+
+}
+
+const handleTotal = () => {
+
+
+    if (playerArray.length == 0) {
+
+        alert("Please select a player!")
+    } else {
+
+        console.log(managerAmount.value, coachAmount.value);
+        totalAMount.innerText = Number(managerAmount.value) + Number(coachAmount.value) + Number(playerExpense.innerText);
+    }
+}
