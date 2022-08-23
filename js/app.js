@@ -26,14 +26,13 @@ const handleSelect = (item) => {
             `
             playerContainer.appendChild(li);
             // playerContainer.innerHTML += `${i+1}.<li>${element}</li>`;
+            item.disabled = true;
             
         }
-        element.parentNode.parentNode.children[1].children[1].disabled = true;
     }
     else {
         alert("Maximum value reached");
-        element.parentNode.parentNode.children[1].children[1].disabled = false;
-
+        item.disabled = false;
     }
 
    
