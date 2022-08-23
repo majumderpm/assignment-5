@@ -4,7 +4,7 @@ const playerArray = [];
 const playerContainer = document.getElementById("playerContainer");
 
 const handleSelect = (item) => {
-    // console.log(item);
+    console.log(item);
 
 
     if (playerArray.length <= 4) {
@@ -26,6 +26,7 @@ const handleSelect = (item) => {
             `
             playerContainer.appendChild(li);
             // playerContainer.innerHTML += `${i+1}.<li>${element}</li>`;
+            item.disabled = true;
             
         }
     }
